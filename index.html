@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            
+            background-image: url('ba.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+            background-size: cover; /* Ensures the image covers the entire page */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            height: 100vh; /* Ensures the body takes the full viewport height */
+            margin: 0; /* Removes default margins */
+        }
+
+        
+        .cake {
+            width: 100px;
+            cursor: pointer;
+            border-radius: 30%;
+            border: 2rem;
+        }
+        .spinning-images img {
+            width: 100px;
+            animation: step-start 4s infinite linear;
+        }
+        .page2.p{
+            color: rgb(69, 6, 48);
+            size: 1rem;
+        }
+        .page2.span{
+            text-shadow: 6rem;
+            size:3rem;
+            color: blue;
+        }
+        .button{
+            border-radius: 30%;
+            border: 29px;
+            color: aliceblue;
+            background-color: red;
+        }
+        .page2.h1{
+            color: rgb(1, 61, 60);
+            text-shadow: 2rem;
+            size: 5rem;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Page 1 -->
+    <div id="page1" style="display: block;">
+        <h1>Welcome to the Birthday Wishes Website</h1>
+        <img src="cake-icon.jpg" alt="Cake Icon" class="cake" display="flex" onclick="goToPage(2)">
+    </div>
+
+    <!-- Page 2 -->
+    <div id="page2"style="display: none;" >
+        <div class="page2">
+        <h1><B>🎉 Happy Birthday! 🎉</h1></B>
+      <br>  <p><b>To my soul sister, my guiding light,
+          <br>  Happy Birthday to the one who’s more than a friend—you're my chosen family! 🌟 From day one, you’ve been the voice of wisdom in my chaos, the warm hug after a long day, and the guardian angel in life’s storms.
+           <br> Today, as the candles dance on your cake, I wish for your dreams to soar higher than ever, for every star in the sky to whisper sweet blessings your way. You deserve joys as infinite as the universe and love as deep as the ocean.
+          <br>  Thank you for being my anchor and my cheerleader. With you, life feels like a tapestry of laughter, shared secrets, and memories worth gold. Here’s to more coffee-fueled chats, midnight giggles, and adventures that make us say, “Remember this day!”
+           <br> So, let’s raise a toast 🥂 to the incredible you—my forever elder sister at heart.
+           <br><br> With all my love and gratitude,
+           <br> CHOTI <span   text-shadow: 6rem;
+           size:3rem;
+           color: blue;> Ashu 💖💖💖💖💖</p></b></span>
+        <button onclick="goToPage(3)">Next</button></div>
+    </div>
+
+    <!-- Page 3 -->
+    <div id="page3" style="display: none;">
+        <h1>Special Memories</h1>
+        <div class="spinning-images">
+            <img src="pic1.jpeg" alt="Image 1">
+            <img src="pic2.jpeg" alt="Image 2">
+            <img src="pic3.jpeg" alt="Image 3">
+        </div>
+        <div>
+            <h2>Videos:</h2>
+            <video width="320" height="240" controls>
+                <source src="WhatsApp Video 2025-04-08 at 1.17.35 AM.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video width="320" height="240" controls>
+                <source src="WhatsApp Video 2025-04-08 at 1.17.37 AM.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <h3>Thank you for everthing di!💖💖💖💖💖</h3>
+    </div>
+
+    <script>
+        function goToPage(pageNumber) {
+            document.getElementById('page1').style.display = pageNumber === 1 ? 'block' : 'none';
+            document.getElementById('page2').style.display = pageNumber === 2 ? 'block' : 'none';
+            document.getElementById('page3').style.display = pageNumber === 3 ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
